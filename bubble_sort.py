@@ -16,4 +16,9 @@ def ordinal_indicator(n):
         return f"{n}th"
 
 def bubble_sort(data):
+    for x in range(len(data)):                 
+      for i in range(len(data)-x-1):             
+        if data[i] > data[i+1]:                 
+         data[i], data[i+1] = data[i+1], data[i] 
+      print("\t ", ordinal_indicator(x + 1), " Pass: ", data)
     print(f"\n\tBUBBLE SORT: {data}") 
