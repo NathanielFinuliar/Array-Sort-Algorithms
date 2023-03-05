@@ -6,6 +6,12 @@ print(" ")
 
 print("\t  ARRAY VALUES:[81, 96, 77, 67, 43, 99, 65, 32, 62, 60]")
 
+def quick_sort(data, left, right, counter=1):
+    if left < right:
+        partition_pos = partition(data, left, right, counter)
+        quick_sort(data, left, partition_pos - 1, counter)
+        quick_sort(data, partition_pos + 1, right, counter)
+
 def ordinal_indicator(n):
     if n == 1:
         return "1st"
