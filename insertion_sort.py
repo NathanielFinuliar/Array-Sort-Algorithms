@@ -16,3 +16,6 @@ def ordinal_indicator(n):
         return str(n) + "th"
     else:
         return str(n)
+    
+def insertion_sort(data):
+     print(f"\n\tINSERTION SORT: {data}")
