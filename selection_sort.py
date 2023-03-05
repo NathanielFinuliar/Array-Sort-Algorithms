@@ -28,4 +28,4 @@ def selection_sort(data):
     print(f"\n\tSELECTION SORT: {data}")      
 
 num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
-selection_sort(num_array)        
+selection_sort(num_array)         
