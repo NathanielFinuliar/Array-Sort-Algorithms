@@ -15,7 +15,7 @@ def merge_sort(data):
     left = merge_sort(left)              
     right = merge_sort(right)              
     data = merge(left, right)          
-    print("\t\t\t\t ", data)                        
+    print("\t\t     ", data)                        
     return data                 
 
 def merge(left, right): 
@@ -34,4 +34,7 @@ def merge(left, right):
     if(len(right) > 0):                   
         result.extend(right) 
 
-    return result                
+    return result           
+ 
+num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
+print("\n\t MERGE SORT: ",merge_sort(num_array))
