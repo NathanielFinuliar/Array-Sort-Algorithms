@@ -17,3 +17,8 @@ def ordinal_indicator(n):
         return str(n) + "th"
     else:
         return str(n)
+    
+def partition(data, left, right, counter):
+    i = left
+    j = right - 1
+    pivot = data[right]
