@@ -22,3 +22,21 @@ def partition(data, left, right, counter):
     i = left
     j = right - 1
     pivot = data[right]
+
+    while i < j:
+        while i < right and data[i] < pivot:
+            i += 1
+        while j > left and data[j] >= pivot:
+            j -= 1
+
+        if i < j:
+            data[i], data[j] = data[j], data[i]
+            print("\t\t", ordinal_indicator(counter), "Pass:", data)
+            counter += 1
+
+    if data[i] > pivot:
+        data[i], data[right] = data[right], data[i]
+        print("\t\t", ordinal_indicator(counter), "Pass:", data)
+        counter += 1
+
+    return i
