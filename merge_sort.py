@@ -16,4 +16,22 @@ def merge_sort(data):
     right = merge_sort(right)              
     data = merge(left, right)          
     print("\t\t\t\t ", data)                        
-    return data                       
+    return data                 
+
+def merge(left, right): 
+    result = [] 
+  
+    while len(left) > 0 and len(right) > 0: 
+        if(left[0] <= right[0]):            
+            result.append(left[0])          
+            left.pop(0)                    
+        else:                             
+            result.append(right[0])         
+            right.pop(0)                   
+  
+    if(len(left) > 0):                    
+        result.extend(left)               
+    if(len(right) > 0):                   
+        result.extend(right) 
+
+    return result                
