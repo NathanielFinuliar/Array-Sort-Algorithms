@@ -16,3 +16,6 @@ def ordinal_indicator(n):
         return str(n) + "th"
     else:
         return str(n)
+    
+def selection_sort(data):
+    print(f"\n\tSELECTION SORT: {data}")              
