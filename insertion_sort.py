@@ -3,7 +3,7 @@ print("\t\t $"," "*7, "INSERTION SORTING", " " *7,"$")
 print("\t\t $"," " * 2, "CODED BY NATHANIEL FINULIAR", " "*2,"$")
 print("\t\t", "%"*37)
 
-print("\n\tARRAY VALUES: [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]")
+print("\n\tARRAY VALUES: [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]") 
 
 def ordinal_indicator(n):
     if n == 1:
