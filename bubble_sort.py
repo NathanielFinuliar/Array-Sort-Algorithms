@@ -22,3 +22,6 @@ def bubble_sort(data):
          data[i], data[i+1] = data[i+1], data[i] 
       print("\t ", ordinal_indicator(x + 1), " Pass: ", data)
     print(f"\n\tBUBBLE SORT: {data}") 
+
+num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
+bubble_sort(num_array)
