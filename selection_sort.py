@@ -18,4 +18,11 @@ def ordinal_indicator(n):
         return str(n)
     
 def selection_sort(data):
+    for x in range(9):                             
+        min_val = x                                      
+        for i in range(x,10):                    
+            if(data[min_val] > data[i]):                  
+                min_val = i                               
+        data[x], data[min_val] = data[min_val], data[x]    
+        print("\t ", ordinal_indicator(x + 1), " Pass: ", data)
     print(f"\n\tSELECTION SORT: {data}")              
