@@ -14,3 +14,6 @@ def ordinal_indicator(n):
         return "3rd"
     else:
         return f"{n}th"
+
+def bubble_sort(data):
+    print(f"\n\tBUBBLE SORT: {data}") 
