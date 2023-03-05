@@ -25,4 +25,7 @@ def selection_sort(data):
                 min_val = i                               
         data[x], data[min_val] = data[min_val], data[x]    
         print("\t ", ordinal_indicator(x + 1), " Pass: ", data)
-    print(f"\n\tSELECTION SORT: {data}")              
+    print(f"\n\tSELECTION SORT: {data}")      
+
+num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
+selection_sort(num_array)        
