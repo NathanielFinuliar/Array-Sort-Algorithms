@@ -27,3 +27,6 @@ def insertion_sort(data):
         data[i+1] = val                    
         print("\t ", ordinal_indicator(x), " Pass: ", data)
     print(f"\n\tINSERTION SORT: {data}")
+
+num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
+insertion_sort(num_array)
