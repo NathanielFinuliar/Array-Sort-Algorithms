@@ -19,7 +19,7 @@ def merge_sort(data):
     return data                 
 
 def merge(left, right): 
-    result = [] 
+    result = []  
   
     while len(left) > 0 and len(right) > 0: 
         if(left[0] <= right[0]):            
@@ -38,3 +38,4 @@ def merge(left, right):
  
 num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
 print("\n\t MERGE SORT: ",merge_sort(num_array))
+print("")

@@ -18,15 +18,16 @@ def ordinal_indicator(n):
         return str(n)
     
 def insertion_sort(data):
-    for x in range(1, len(data)):               
+    for x in range(2, len(data)):               
         val = data[x]                         
-        i = x-1                               
-        while i >=0 and val < data[i] :       
+        i = x - 1                               
+        while i >= 0 and val < data[i]:       
             data[i+1] = data[i]                
-            i -= 1                            
-        data[i+1] = val                    
+            i -= 1    
+                                    
+        data[i+1] = val      
         print("\t ", ordinal_indicator(x), " Pass: ", data)
-    print(f"\n\tINSERTION SORT: {data}")
+    print(f"\n\tINSERTION SORT: {data}\n")
 
 num_array = [81, 96, 77, 67, 43, 99, 65, 32, 62, 60]
 insertion_sort(num_array)
